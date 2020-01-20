@@ -1,16 +1,16 @@
-code
-
-<header class="jumbotron text-center">
-    <p></p>
-    <nav class="nav nav-pills justify-content-center">
-      <a class="nav-item nav-link active" href="">Home</a>
-      <a class="nav-item nav-link" href="">Menu</a>
-      <a class="nav-item nav-link" href="">Reservation</a>
-      <a class="nav-item nav-link" href="about.html">About Us</a>
-      <a class="nav-item nav-link" href="">Location/Hours</a>
-      <a class="nav-item nav-link" href="takeout.html">Take out</a>
-      <a class="nav-item nav-link" href="">Log in</a>
-      <a class="nav-item nav-link disable" href="">search</a>
-    </nav>
-    <h1>About Us</h1>
+<nav class="nav nav-tabs nav-fill justify-content-center m-0">
+    <a class="nav-item nav-link active" href="">Home</a>
+    <a class="nav-item nav-link" href="">Menu</a>
+    <a class="nav-item nav-link" href="">Reservation</a>
+    <a class="nav-item nav-link" href="about.html">About Us</a>
+    <a class="nav-item nav-link" href="">Location/Hours</a>
+    <a class="nav-item nav-link" href="takeout.html">Take out</a>
+    <a class="nav-item nav-link" href="">Log in</a>
+    <a class="nav-item nav-link disable" href="">search</a>
+  </nav>
+  
+  <header>
+    <div class="jumbotron text-center m-1">
+      <h1>About Us</h1>
+  </div>
   </header>
