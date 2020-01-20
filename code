@@ -1,14 +1,14 @@
-<nav class="nav nav-tabs nav-fill justify-content-center m-0">
-    <a class="nav-item nav-link active" href="">Home</a>
-    <a class="nav-item nav-link" href="">Menu</a>
-    <a class="nav-item nav-link" href="">Reservation</a>
-    <a class="nav-item nav-link" href="about.html">About Us</a>
-    <a class="nav-item nav-link" href="">Location/Hours</a>
-    <a class="nav-item nav-link" href="takeout.html">Take out</a>
-    <a class="nav-item nav-link" href="">Log in</a>
-    <a class="nav-item nav-link disable" href="">search</a>
+<nav class="nav nav-tabs nav-fill justify-content-center sticky-top">
+    <a class="nav-item nav-link bg-light text-dark" href="">Home</a>
+    <a class="nav-item nav-link bg-light text-dark" href="index.html">Menu</a>
+    <a class="nav-item nav-link bg-light text-dark" href="">Reservation</a>
+    <a class="nav-item nav-link bg-light text-dark" href="about.html">About Us</a>
+    <a class="nav-item nav-link bg-light text-dark" href="">Location/Hours</a>
+    <a class="nav-item nav-link bg-light text-dark" href="takeout.html">Take out</a>
+    <a class="nav-item nav-link bg-light text-dark" href="">Log in</a>
+    <a class="nav-item nav-link bg-light text-dark" href="">search</a>
   </nav>
-  
+
   <header>
     <div class="jumbotron text-center m-1">
       <h1>About Us</h1>
