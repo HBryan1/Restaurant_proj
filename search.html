@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="search.css"> -->
+    <title>Search</title>
+  </head>
+  <body>
+    <nav class="nav nav-tabs nav-fill justify-content-center sticky-top">
+    <a class="nav-item nav-link bg-light text-dark" href="">Home</a>
+    <a class="nav-item nav-link bg-light text-dark" href="index.html">Menu</a>
+    <a class="nav-item nav-link bg-light text-dark" href="">Reservation</a>
+    <a class="nav-item nav-link bg-light text-dark" href="about.html">About Us</a>
+    <a class="nav-item nav-link bg-light text-dark" href="contactus.html" target="_blank"> Location/Hours</a>
+    <a class="nav-item nav-link bg-light text-dark" href="takeout.html">Take out</a>
+    <a class="nav-item nav-link bg-light text-dark" href="">Log in</a>
+    <a class="nav-item nav-link bg-light text-dark" href="search.html" target="_blank">Search</a>
+  </nav>
+
+  <header>
+    <div class="jumbotron text-center m-1">
+      <h1>About Us</h1>
+  </div>
+  </header>
+  <img src="search.jpeg" alt="img" width="100%">
+   <hr>
+    <!-- Search form -->
+<!--Navbar-->
+
+
+    <!-- Search form -->
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+ {
+  font: 16px Arial;  
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+</style>
+
+
+<!-- <h2>Autocomplete</h2>
+
+<p>Start typing:</p> -->
+
+<!--Make sure the form has the autocomplete function switched off:-->
+<form class="text-center" autocomplete="off" action="/action_page.php" style="padding-bottom: 50px">
+  <div class="autocomplete" style="width:300px;">
+    <input id="myInput" type="text" name="mySearch" placeholder="Search">
+  </div>
+  <input type="submit">
+</form>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="search.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <footer>
+        <div class="container-fluid bg-light">
+            <div class="row">
+                <p class="col-lg-4 p-4">contct us <br> Accessibilit y<br>Russo's Blog</p>
+                <p class="col-lg-4 p-4">VETRO RESTAURANT & LOUNGE <br> 94-20 Guy R Brewer Blvd <br> Jamaica, NY 11451 <br> <a href="contactus.html#map"> MAP</a> <br> TEL: 012-345-6789</p>
+                <p class="col-lg-4 p-4">Russo's Group <br> Russo's On The Bay <br> Vetro Restaurant & Lounge <br> Russo's On The Bay Gourmet <br> Angels On The Bay <br>Department For Aging</p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
