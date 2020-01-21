@@ -1,3 +1,4 @@
+// nav var
 <nav class="nav nav-tabs nav-fill justify-content-center sticky-top">
     <a class="nav-item nav-link bg-light text-dark" href="">Home</a>
     <a class="nav-item nav-link bg-light text-dark" href="index.html">Menu</a>
@@ -14,3 +15,16 @@
       <h1>About Us</h1>
   </div>
   </header>
+
+
+// footer
+
+    <footer>
+        <div class="container-fluid bg-light">
+            <div class="row">
+                <p class="col-lg-4 p-4">contct us <br> Accessibilit y<br>Russo's Blog</p>
+                <p class="col-lg-4 p-4">VETRO RESTAURANT & LOUNGE <br> 94-20 Guy R Brewer Blvd <br> Jamaica, NY 11451 <br> <a href="page2.html#map"> MAP</a> <br> TEL: 012-345-6789</p>
+                <p class="col-lg-4 p-4">Russo's Group <br> Russo's On The Bay <br> Vetro Restaurant & Lounge <br> Russo's On The Bay Gourmet <br> Angels On The Bay <br>Department For Aging</p>
+            </div>
+        </div>
+    </footer>
