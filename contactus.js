@@ -2,7 +2,10 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init()
 {
-  let alertString = "";
+  let alert1 = "";
+  let alert2 = "";
+  let alert3 = "";
+  let alert4 = "";
   let btn = document.getElementById("submit");
   let msg = document.getElementById("alertmsg");
   msg.setAttribute("class", "alert alert-primary");
@@ -18,47 +21,47 @@ function init()
     if(name.length == 0)
     {
       msg.style = "display:block";
-      alertString = " name box is empty";
+      alert1 = " name box ";
     }
     else if(name.length != 0)
     {
       msg.style = "display:none";
-      alertString = " ";
+      alert1 = " ";
     }
 
     if(email.length == 0)
     {
       msg.style = "display:block";
-      alertString = alertString + " email box is empty";
+      alert2 = " email box ";
     }
     else if(email.length != 0)
     {
       msg.style = "display:none";
-      alertString = " ";
+      alert2 = " ";
     }
 
 if(subject.length == 0)
     {
       msg.style = "display:block";
-      alertString = alertString + " Subject box is empty";
+      alert3 = " Subject box ";
     }
     else if(subject.length != 0)
     {
       msg.style = "display:none";
-      alertString = " ";
+      alert3 = " ";
     }
 if(message.length == 0)
     {
       msg.style = "display:block";
-      alertString = alertString + " Message box is empty";
+      alert4 = " Message box ";
     }
     else if(message.length != 0)
     {
-      alertString = alertString + " display:none";
-      alertString = " ";
+      msg.style = "display:none";
+      alert4 = " ";
     }
-msg.innerHTML = alertString;
-
+msg.innerHTML = alert1 + alert2 + alert3 + alert4 + " is empty";
+console.log(alert1 + alert2 + alert3 + alert4 + " is empty");
 
 
 
@@ -84,3 +87,4 @@ msg.innerHTML = alertString;
       document.getElementById("alertmsg").setAttribute("class", "alert alert-success");
   }
 }
+
