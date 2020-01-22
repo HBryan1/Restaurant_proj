@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
     <body>
-    <nav class="nav nav-tabs nav-fill justify-content-center sticky-top">
+      <nav class="nav nav-tabs nav-fill justify-content-center sticky-top">
         <a class="nav-item nav-link bg-gradient-light text-dark" href="index.html">Home</a>
         <a class="nav-item nav-link bg-gradient-light text-dark" href="menu2.html">Menu</a>
         <a class="nav-item nav-link bg-gradient-light text-dark" href="Reservation.html">Reservation</a>
@@ -19,14 +19,6 @@
         <a class="nav-item nav-link bg-gradient-light text-dark" href="search.html">search</a>
     </nav>
         <header>
-          <style>
-            body {
-              background-image: url('img/11.jpg');
-              background-repeat: no-repeat;
-              background-attachment: fixed;
-              background-size: 100% 100%;
-            }
-            </style>
           <div class="container my-5 py-5 z-depth-1">
 
 
@@ -40,16 +32,20 @@
                 <div class="col-md-6">
         
                   <!-- Default form login -->
-                  <form class="text-center" action="#!">
+                  <!-- I have added form name and onsubmit function and action -->
+                  <form name="login-form" class="text-center" action="menu2.html" onsubmit="return validateForm()">
         
                     <p class="h4 mb-4">Sign in</p>
+                    <!-- added alert div -->
+                    <div id="alertmsg"></div>
                    
         
                     <!-- Email -->
-                    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-         
+                    <!-- added name for input -->
+                    <input type="email" id="defaultLoginFormEmail" name="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
                     <!-- Password -->
-                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+                    <!-- added name for input -->
+                    <input type="password" id="defaultLoginFormPassword" name="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
         
                     <div class="d-flex justify-content-around">
                       <div>
@@ -66,7 +62,7 @@
                     </div>
         
                     <!-- Sign in button -->
-                    <button id= "signin" class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+                    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
         
                     <!-- Register -->
                     <p>Not a member?
@@ -106,6 +102,7 @@
                   </div>
               </div>
             </footer>
+            <script src="login.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
