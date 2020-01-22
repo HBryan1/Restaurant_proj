@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init()
 {
+  let alertString = "";
   let btn = document.getElementById("submit");
   let msg = document.getElementById("alertmsg");
   msg.setAttribute("class", "alert alert-primary");
@@ -17,42 +18,46 @@ function init()
     if(name.length == 0)
     {
       msg.style = "display:block";
-      msg.innerText = "name box is empty";
+      alertString = " name box is empty";
     }
     else if(name.length != 0)
     {
       msg.style = "display:none";
+      alertString = " ";
     }
 
     if(email.length == 0)
     {
       msg.style = "display:block";
-      msg.innerText = "email box is empty";
+      alertString = alertString + " email box is empty";
     }
     else if(email.length != 0)
     {
       msg.style = "display:none";
+      alertString = " ";
     }
 
 if(subject.length == 0)
     {
       msg.style = "display:block";
-      msg.innerText = "Subject box is empty";
+      alertString = alertString + " Subject box is empty";
     }
     else if(subject.length != 0)
     {
       msg.style = "display:none";
+      alertString = " ";
     }
 if(message.length == 0)
     {
       msg.style = "display:block";
-      msg.innerText = "Message box is empty";
+      alertString = alertString + " Message box is empty";
     }
     else if(message.length != 0)
     {
-      msg.style = "display:none";
+      alertString = alertString + " display:none";
+      alertString = " ";
     }
-
+msg.innerHTML = alertString;
 
 
 
