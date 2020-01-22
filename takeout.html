@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width">
   <title>Take out</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="script.js"></script>
 </head>
 <body>
   <nav class="nav nav-tabs nav-fill justify-content-center sticky-top">
       <a class="nav-item nav-link bg-gradient-light text-dark" href="index.html">Home</a>
-      <a class="nav-item nav-link bg-gradient-light text-dark" href="menu.html">Menu</a>
-      <a class="nav-item nav-link bg-gradient-light text-dark" href="">Reservation</a>
+      <a class="nav-item nav-link bg-gradient-light text-dark" href="menu2.html">Menu</a>
+      <a class="nav-item nav-link bg-gradient-light text-dark" href="Reservation.html">Reservation</a>
       <a class="nav-item nav-link bg-gradient-light text-dark" href="about.html">About Us</a>
       <a class="nav-item nav-link bg-gradient-light text-dark" href="contactus.html">Location/Hours</a>
       <a class="nav-item nav-link bg-gradient-light text-dark" href="takeout.html">Take out</a>
       <a class="nav-item nav-link bg-gradient-light text-dark" href="Login.html">Log in</a>
       <a class="nav-item nav-link bg-gradient-light text-dark" href="search.html">search</a>
-  </nav
+  </nav>
 
   <header>
       <div class="jumbotron bg-light text-center m-1 p-3 ">
           <div class="container">
               <div class="row">
-                  <img class="col-lg-4" src="images/restaurant493.png" alt="493logo" width="150px" height="150px" />
+                  <img class="col-lg-4" src="img/restaurant493.png" alt="493logo" width="150px" height="150px" />
 
                   <div class="col-lg-6">
                       <h1 style="font-family:Brush Script MT; display:block;">Restaruant 493</h1>
@@ -33,10 +34,95 @@
       </div>
   </header>
 
+
+  <section class="container">
+    <div id="alertmsg"></div>
+      <form class="needs-validation" >
+          <div class="form-row">
+              <div class="col-md-4 mb-3">
+                  <label for="name"> Name</label>
+                  <input type="text" class="form-control" id="name" required>
+
+              </div>
+              <div class="col-md-4 mb-3">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" required>
+
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend" required>
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="col-md-4 mb-3">
+                  <label for="address">Address</label>
+                  <input type="text" class="form-control" id="address" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <label for="state">State</label>
+                  <select class="custom-select" id="state" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option>NJ</option>
+                      <option>NY</option>
+                      <option>CA</option>
+                      <option>NC</option>
+                      <option>AL</option>
+                  </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                  <label for="zip">Zip Code</label>
+                  <input type="text" class="form-control" id="zip" required>
+              </div>
+          </div>
+      </form>
+      <div class="container">
+          <div class="row">
+              <img id="1" class="col-lg-4" src="img/coffee.jpg" alt="coffee" width="180" height="180">
+              <img id="2" class="col-lg-4" src="img/tea.jpg" alt="coffee" width="180" height="180">
+              <img id="3" class="col-lg-4" src="img/juice.jpg" alt="coffee" width="180" height="180">
+              <p class="col-lg-4">Coffee</p>
+              <p class="col-lg-4">Tea</p>
+              <p class="col-lg-4">Juice</p>
+              <img id="4" class="col-lg-4" src="img/smoothie.jpg" alt="coffee" width="180" height="180">
+              <img id="5" class="col-lg-4" src="img/coca-cola.jpg" alt="coffee" width="180" height="180">
+              <img id="6" class="col-lg-4" src="img/sprite.jpg" alt="coffee" width="180" height="180">
+              <p class="col-lg-4">Smoothie</p>
+              <p class="col-lg-4">Coca-cola</p>
+              <p class="col-lg-4">Sprite</p>
+              <img id="7" class="col-lg-4" src="img/burrito.jpg" alt="coffee" width="180" height="180">
+              <img id="8" class="col-lg-4" src="img/burger.jpg" alt="coffee" width="180" height="180">
+              <img id="9" class="col-lg-4" src="img/fries.jpg" alt="coffee" width="180" height="180">
+              <p class="col-lg-4">Burrito</p>
+              <p class="col-lg-4">Burger</p>
+              <p class="col-lg-4">Fries</p>
+              <img id="10" class="col-lg-4" src="img/chiken.jpg" alt="coffee" width="180" height="180">
+              <img id="11" class="col-lg-4" src="img/tacos.jpg" alt="coffee" width="180" height="180">
+              <img id="12" class="col-lg-4" src="img/nugets.jpg" alt="coffee" width="180" height="180">
+              <p class="col-lg-4">Chicken Sandwich</p>
+              <p class="col-lg-4">Tacos</p>
+              <p class="col-lg-4">Chicken Nuggets</p>
+          </div>
+
+      </div>
+      <button class="btn btn-primary" type="button" id="clear">Clear All</button>
+      <button class="btn btn-primary" type="submit" id="submit">Submit Order</button>
+      <h3>Your Order</h3>
+      <table class="table">
+        <thead class="thead-dark">
+        <td>NO.</td>
+        <td>Item</td>
+        <td>Amount</td>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+  </section>
+
   <footer>
       <div class="container-fluid m-2 bg-light">
           <div class="row">
-              <p class="col-lg-4 p-4"><a href="contactus.html">contct us </a> <br> Accessibility<br>493's Blog <br /> © </p>
+              <p class="col-lg-4 p-4"><a href="contactus.html">contct us </a> <br> Accessibility<br>493's Blog <br /> © Bryan Hernandez </p>
               <p class="col-lg-4 p-4">VETRO RESTAURANT & LOUNGE <br> 94-20 Guy R Brewer Blvd <br> Jamaica, NY 11451 <br> <a href="contactus.html#map"> MAP</a> <br> TEL: 123-456-7890</p>
               <p class="col-lg-4 p-4">Zakir's Group <br> Mohammad's On The Bay <br> Theodore Restaurant & Lounge <br> Bryan's On The Bay Gourmet </p>
           </div>
