@@ -24,6 +24,35 @@ function init()
       msg.style = "display:none";
     }
 
+    if(email.length == 0)
+    {
+      msg.style = "display:block";
+      msg.innerText = "email box is empty";
+    }
+    else if(email.length != 0)
+    {
+      msg.style = "display:none";
+    }
+
+if(subject.length == 0)
+    {
+      msg.style = "display:block";
+      msg.innerText = "Subject box is empty";
+    }
+    else if(subject.length != 0)
+    {
+      msg.style = "display:none";
+    }
+if(message.length == 0)
+    {
+      msg.style = "display:block";
+      msg.innerText = "Message box is empty";
+    }
+    else if(message.length != 0)
+    {
+      msg.style = "display:none";
+    }
+
 
 
 
